@@ -16,3 +16,26 @@
 .finder .helper{color:#65716b}
 @media(max-width:1000px){.intro{grid-template-columns:1fr;gap:30px}.finder{width:100%;max-width:620px}.intro h1 br{display:initial}.intro h1{max-width:650px}}
 @media(max-width:400px){.finder{padding:20px 16px}.searchbox{display:grid;grid-template-columns:22px minmax(0,1fr)}.searchbox button{grid-column:1/-1;width:100%;height:38px}.finder .or{font-size:12px}.finder label{font-size:22px}}
+
+
+/* A gallery-inspired opening, balanced around the visitor's main controls. */
+.intro{display:flex;flex-direction:column;gap:32px;padding:44px 0 48px}
+.hero-opening{display:grid;grid-template-columns:minmax(100px,1fr) minmax(300px,2.4fr) minmax(100px,1fr);align-items:center;gap:24px;width:100%;max-width:1080px}
+.hero-copy{text-align:center;position:relative;z-index:1}
+.hero-copy .eyebrow{font-size:11px;letter-spacing:2px;margin-bottom:16px}
+.intro .hero-copy h1{font-size:clamp(48px,5.5vw,74px);line-height:1.03;letter-spacing:-2.5px;margin:0 0 20px;max-width:none}
+.hero-copy h1 em{color:#718066;font-weight:400}
+.hero-copy .lead{font-size:16px;line-height:1.65}
+.hero-art{padding:8px 8px 0;background:#fff;border:1px solid #dedfd5;box-shadow:0 8px 22px #23302c12}
+.hero-art img{display:block;width:100%;height:180px;object-fit:cover}
+.hero-art span{display:block;padding:10px 1px;font-size:10px;letter-spacing:.5px;color:var(--muted)}
+.hero-art-left{transform:rotate(-7deg);margin-top:12px}
+.hero-art-right{transform:rotate(7deg);margin-top:45px}
+.hero-art-right img{object-position:center 27%}
+.intro .finder{max-width:750px;width:100%;padding:23px 28px;border-top-width:1px}
+.finder label{text-align:center;margin-bottom:16px;font-size:23px}
+.finder .helper{text-align:center}
+.finder .or{margin:15px 0}
+@media(min-width:1050px){.intro .finder{display:grid;grid-template-columns:1.15fr auto 1fr;column-gap:20px;align-items:center;max-width:1000px}.finder label,.finder .helper{grid-column:1/-1}.finder .or{margin:0;max-width:115px;text-align:center;line-height:1.4}.finder .or span{display:none}.finder .photo-button{min-height:60px}.finder .helper{margin-top:14px}}
+@media(max-width:700px){.hero-opening{grid-template-columns:80px minmax(0,1fr) 80px;gap:12px}.hero-art{padding:5px}.hero-art img{height:118px}.hero-art span{display:none}.hero-copy .eyebrow{font-size:10px;letter-spacing:1px}.intro .hero-copy h1{font-size:44px;letter-spacing:-1.8px}.hero-copy .lead{font-size:14px}.hero-art-right{margin-top:30px}.intro{padding-top:32px;gap:26px}.intro .finder{padding:22px}}
+@media(max-width:480px){.hero-opening{grid-template-columns:45px minmax(0,1fr) 45px;gap:8px}.hero-art img{height:83px}.hero-art{padding:3px}.intro .hero-copy h1{font-size:38px;letter-spacing:-1.4px}.hero-copy .eyebrow{font-size:9px;letter-spacing:.6px}.hero-copy .lead{font-size:14px}.hero-copy .lead br{display:none}.intro .finder{padding:20px 16px}}
